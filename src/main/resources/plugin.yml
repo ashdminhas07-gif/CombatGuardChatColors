@@ -1,0 +1,19 @@
+name: CombatGuardChatColors
+version: 1.0.0
+main: com.cosmic.guard.CombatGuardPlugin
+api-version: '1.21'
+author: Cosmic
+description: Combat tagging, teleport blocking, and operator chat gradients.
+commands:
+  chatcolors:
+    description: Open the chat gradient selector.
+    usage: /chatcolors
+    permission: combatguard.chatcolors
+  chatcolor:
+    description: Apply or remove a player's chat gradient.
+    usage: /chatcolor <set|remove> <player> [gradient]
+    permission: combatguard.chatcolors
+permissions:
+  combatguard.chatcolors:
+    description: Allows operators to manage chat gradients.
+    default: op
